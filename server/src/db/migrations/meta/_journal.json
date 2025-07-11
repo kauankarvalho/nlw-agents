@@ -8,6 +8,13 @@
       "when": 1751987986824,
       "tag": "0000_secret_trauma",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1752066926916,
+      "tag": "0001_cold_tinkerer",
+      "breakpoints": true
     }
   ]
 }
