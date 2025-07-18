@@ -47,7 +47,7 @@ export const createQuestionRoute: FastifyPluginCallbackZod = (app) => {
       let answer: string | null = null
 
       if (chunks.length > 0) {
-        const transcriptions = chunks.map((chunk) => chunk.similarity)
+        const transcriptions = chunks.map((chunk) => chunk.transcription)
         answer = await generateAnswer(question, transcriptions)
       }
 

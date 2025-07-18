@@ -51,7 +51,7 @@ export async function generateEmbeddings(text: string) {
 
 export async function generateAnswer(
   question: string,
-  transcriptions: number[],
+  transcriptions: string[],
 ) {
   const context = transcriptions.join("\n\n")
 
