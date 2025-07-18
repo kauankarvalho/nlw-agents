@@ -2,12 +2,17 @@ import { reset, seed } from "drizzle-seed"
 import { database, sql } from "./connection.ts"
 import { schema } from "./schema/index.ts"
 
+const seedSchema = {
+  questions: schema.questions,
+  rooms: schema.rooms,
+}
+
 await reset(database, schema)
 
-await seed(database, schema).refine((faker) => {
+await seed(database, seedSchema).refine((faker) => {
   return {
     rooms: {
-      count: 5,
+      count: 3,
       columns: {
         name: faker.companyName(),
         description: faker.loremIpsum(),
@@ -21,5 +26,4 @@ await seed(database, schema).refine((faker) => {
 
 await sql.end()
 
-// biome-ignore lint/suspicious/noConsole: only used in dev
 console.log("🌱 Database seeded")
