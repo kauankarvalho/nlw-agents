@@ -17,16 +17,22 @@ Este projeto corresponde à interface web do **NLW Agents**, desenvolvida durant
 > **Obs.:** Este projeto utiliza o gerenciador de pacotes [pnpm](https://pnpm.io/). Caso não tenha instalado, siga as instruções na documentação oficial.
 
 1. **Clone o repositório:**
+
    ```bash
    git clone https://github.com/kauankarvalho/nlw-agents.git
    cd nlw-agents/web
    ```
+
 2. **Instale as dependências:**
+
    ```bash
    pnpm install
    ```
+
 3. **Configure as variáveis de ambiente:**
+
    Crie um arquivo `.env` (se necessário) para definir a URL da API backend:
+
    ```json
    {
      "VITE_API_URL": "http://localhost:3333"
@@ -36,19 +42,27 @@ Este projeto corresponde à interface web do **NLW Agents**, desenvolvida durant
 ## ▶️ Como usar
 
 1. **Inicie o servidor de desenvolvimento:**
+
    ```bash
    pnpm start:dev
    ```
+
    O app estará disponível em `http://localhost:5173`.
+
 2. **Para build de produção:**
+
    ```bash
    pnpm build
    ```
+
 3. **Para rodar o preview da build:**
+
    ```bash
    pnpm preview
    ```
+
 4. **Para formatar o código com Prettier:**
+
    ```bash
    pnpm prettier
    ```

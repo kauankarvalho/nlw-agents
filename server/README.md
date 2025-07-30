@@ -19,16 +19,22 @@ Este projeto faz parte do evento **NLW Agents** promovido pela [Rocketseat](http
 > **Obs.:** Este projeto utiliza o gerenciador de pacotes [pnpm](https://pnpm.io/). Caso não tenha instalado, siga as instruções na documentação oficial.
 
 1. **Clone o repositório:**
+
    ```bash
    git clone https://github.com/kauankarvalho/nlw-agents.git
    cd nlw-agents/server
    ```
+
 2. **Instale as dependências:**
+
    ```bash
    pnpm install
    ```
+
 3. **Configure as variáveis de ambiente:**
+
    Crie um arquivo `.env` com:
+
    ```json
    {
      "DATABASE_URL": "postgresql://docker:docker@localhost:5432/nlw_agents_server_db",
@@ -36,7 +42,9 @@ Este projeto faz parte do evento **NLW Agents** promovido pela [Rocketseat](http
      "GEMINI_API_KEY": "<sua-chave-google-gemini>"
    }
    ```
+
 4. **Suba o banco de dados:**
+
    ```bash
    docker compose up -d
    ```
@@ -44,23 +52,33 @@ Este projeto faz parte do evento **NLW Agents** promovido pela [Rocketseat](http
 ## ▶️ Como usar
 
 1. **Inicie o banco de dados (caso ainda não tenha feito):**
+
    ```bash
    docker compose up -d
    ```
+
 2. **Rode as migrações do banco de dados:**
+
    ```bash
    pnpm db:migrate
    ```
+
 3. **(Opcional) Popule o banco com dados iniciais (seed):**
+
    ```bash
    pnpm db:seed
    ```
+
 4. **Inicie o servidor em modo desenvolvimento:**
+
    ```bash
    pnpm start:dev
    ```
+
    A API estará disponível em `http://localhost:3333`.
+
 5. **Para rodar em produção:**
+
    ```bash
    pnpm start
    ```
@@ -76,6 +94,7 @@ Este projeto faz parte do evento **NLW Agents** promovido pela [Rocketseat](http
 - **POST `/rooms`**
   - Cria uma nova sala.
   - Corpo esperado (JSON):
+
     ```json
     {
       "name": "Nome da sala",
@@ -89,6 +108,7 @@ Este projeto faz parte do evento **NLW Agents** promovido pela [Rocketseat](http
 - **POST `/rooms/:roomId/questions`**
   - Cria uma nova pergunta e obtém resposta automática.
   - Corpo esperado (JSON):
+
     ```json
     {
       "question": "Sua pergunta aqui"
