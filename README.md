@@ -4,8 +4,8 @@ Este repositório contém o projeto desenvolvido durante o evento **NLW Agents**
 
 O projeto é dividido em duas partes principais:
 
-- ⚙️ **[API](./api/)**: Responsável pelo backend da aplicação.
-- 💻 **[Web](./web/)**: Responsável pela interface do usuário.
+- ⚙️ **[API](./server)**: Responsável pelo backend da aplicação.
+- 💻 **[Web](./web)**: Responsável pela interface do usuário.
 
 Cada uma dessas partes possui um README próprio com instruções e detalhes específicos.
 

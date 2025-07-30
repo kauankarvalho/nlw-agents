@@ -55,10 +55,9 @@ Este projeto corresponde à interface web do **NLW Agents**, desenvolvida durant
 
 ## 🔗 Páginas principais
 
-- **/** – Lista de salas disponíveis
-- **/create-room** – Criação de nova sala
-- **/room/:roomId** – Visualização e perguntas de uma sala
-- **/record-room-audio/:roomId** – Envio de áudio para uma sala
+- **/** – Criar nova sala e ver lista de salas
+- **/sala/:roomId** – Visualizar perguntas e interagir em uma sala
+- **/sala/:roomId/audio** – Enviar/gravar áudio para uma sala
 
 ## 🗂️ Estrutura de Pastas
 
