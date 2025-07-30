@@ -13,7 +13,6 @@ Este projeto faz parte do evento **NLW Agents** promovido pela [Rocketseat](http
 - [dotenv](https://github.com/motdotla/dotenv) (variáveis de ambiente)
 - [Docker](https://www.docker.com/) (infraestrutura)
 - [Prettier](https://prettier.io/) (formatação)
-- [pnpm](https://pnpm.io/) (gerenciador de pacotes)
 
 ## ⚙️ Instalação
 
@@ -103,13 +102,13 @@ Este projeto faz parte do evento **NLW Agents** promovido pela [Rocketseat](http
 
 ```
 server/
-  docker/           # Setup do banco
+  docker/             # Setup do banco
   src/
-    db/             # Banco de dados
-    env/            # Variáveis de ambiente
-    routes/         # Rotas da API
-    services/       # Integrações externas
-    server.ts       # Inicialização do servidor
+    db/               # Banco de dados
+    env/              # Variáveis de ambiente
+    routes/           # Rotas da API
+    services/         # Integrações externas
+    server.ts         # Inicialização do servidor
   docker-compose.yml
   package.json
 ```
